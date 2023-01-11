@@ -1,12 +1,18 @@
 # gestionador_dinamico
 Gestionador dinámico de repositorios
 
-El presente script permite navegar de forma eficiente un listado de repositorios, con la finalidad de hacer una gestión en particular en ellos, de una forma rápida y cómoda, priorizando el orden.
+El presente script permite navegar de forma eficiente un listado de repositorios, 
+con la finalidad de hacer una gestión en particular en ellos, de una forma rápida y cómoda, 
+priorizando el orden.
 
 Esta presente en el directorio de este documento un archivo llamado: gestion_microservicios.txt
+
 Es una tabla donde se visualizan tres columnas separadas por “|”
+
 La primera columna hace referencia al nombre del proyecto.
+
 La segunda columna hace referencia a la gestión realizada.
+
 La tercera columna hace referencia a la URL a ser gestionada.
 
 El presente programa lo que hace es recorrer uno a uno los registros,
