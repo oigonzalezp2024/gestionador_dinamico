@@ -69,7 +69,7 @@ pip freeze > requirements.txt
 ## Librerías del proyecto.
 | librería | Descripción| Comando |
 | :---- | :--- | :--- |
-| webview | Crea una navegador web independiente. | pip install pywebview |
+| webview | Crea un navegador web independiente. | pip install pywebview |
 
 Con la instalación de la librerÍa <b>pywebview</b> se instalarán las
 siguientes librerías de manera automática:
@@ -84,18 +84,6 @@ pythonnet==3.0.3
 pywebview==5.0.5
 typing_extensions==4.11.0
 </pre>
-
-## Realice sus pruebas, actualizaciones o modificaciones.
-Puedes actualizar, contribuir y mejorar el presente software, es libre. Licencia GNU v3.  
-No esta permitido modificar la licencia de trabajos derivados de este proyecto.  
-Por norma internacional debes conservar el mismo tipo de licencia.
-
-## Actualizar la receta.
-Si agregas nuevas librerías al proyecto, no olvides actualizar la receta.
-
-``` CMD
-pip freeze > requirements.txt
-```
 
 ## Comprobar que todo está en orden.
 | Paso   | Descripción                                   | comando                               |
