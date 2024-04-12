@@ -33,17 +33,20 @@ def validate_gestion(lines, line, count):
         repo['gestion'] = repo_open(repo)
         my_str = def_format(repo)
         lines[count] = my_str
-    return lines
+    gest = line[1]
+    return lines, gest 
 
 def my_repos(file_name):
     lines = file_open(file_name)
     count = 0
     lines2 = lines
+    gestion = []
     for ele in lines2:
         line = interpretate(ele)
-        lines = validate_gestion(lines, line, count)
+        lines, gest = validate_gestion(lines, line, count)
+        gestion.append(int(gest))
         count = count + 1
-    return lines
+    return lines, gestion
 
 def file_reset(file_name):
     file_open = open(file_name, "w")
@@ -57,8 +60,8 @@ def file_update(file_name, my_list):
     file_open.close()
 
 def control(file_name):
-    lines = my_repos(file_name)
+    lines, gestion = my_repos(file_name)
     file_reset(file_name)
     file_update(file_name, lines)
-
-control('./gestion_microservicios.txt')
+    if 0 in gestion:
+       control(file_name)
