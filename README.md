@@ -36,16 +36,23 @@ En el archivo <b>gestion_microservicios.txt</b> hay una tabla donde se visualiza
 De esta manera, se irán gestionando todas las URL del listado.
 Una vez recorrido todos los registros, el programa revisa si hay registros todavía en cero, sin gestión, y los recorre de nuevo, hasta que el usuario reporte todas la URL como gestionadas.
 
+## Configuración del entorno de desarrollo.
+| Paso   | Descripción                       | comando                             |
+| :----  | :----                             | :---                                |
+| Paso 1 |  Crear el entorno de trabajo      | python -m venv env                  |
+| Paso 2 | Activar el entorno de trabajo     | ./env/Scripts/activate              |
+| Paso 3 | Actualizar el gestor de paquetes  | python -m pip install --upgrade pip |
+| Paso 4 | Prepare la receta de librerías    | pip install -r requirements.txt     |
+| Paso 5 | Ejecutar el programa             | py main.py                          |
+
 ## Modo de uso por consola
 <pre>
 python -m venv env
 ./env/Scripts/activate
 python -m pip install --upgrade pip
-pip install pywebview
+pip install -r requirements.txt
 py main.py
 </pre>
-
----
 
 ## Realice sus pruebas, actualizaciones o modificaciones.
 Puedes actualizar, contribuir y mejorar el presente software, es libre. Licencia GNU v3.  
@@ -58,18 +65,6 @@ Si agregas nuevas librerías al proyecto, no olvides actualizar la receta.
 ``` CMD
 pip freeze > requirements.txt
 ```
-
----
-
-## Configuración del entorno de desarrollo.
-| Paso   | Descripción                       | comando                             |
-| :----  | :----                             | :---                                |
-| Paso 1 |  Crear el entorno de trabajo.     | python -m venv env                  |
-| Paso 2 | Activar el entorno de trabajo.    | ./env/Scripts/activate              |
-| Paso 3 | Actualizar el gestor de paquetes. | python -m pip install --upgrade pip |
-| Paso 4 | Prepare la receta de librerías.   | pip install -r requirements.txt     |
-
-***
 
 ## Librerías del proyecto.
 | librería | Descripción| Comando |
@@ -90,8 +85,6 @@ pywebview==5.0.5
 typing_extensions==4.11.0
 </pre>
 
----
-
 ## Realice sus pruebas, actualizaciones o modificaciones.
 Puedes actualizar, contribuir y mejorar el presente software, es libre. Licencia GNU v3.  
 No esta permitido modificar la licencia de trabajos derivados de este proyecto.  
@@ -103,8 +96,6 @@ Si agregas nuevas librerías al proyecto, no olvides actualizar la receta.
 ``` CMD
 pip freeze > requirements.txt
 ```
-
----
 
 ## Comprobar que todo está en orden.
 | Paso   | Descripción                                   | comando                               |
